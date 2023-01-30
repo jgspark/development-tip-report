@@ -14,11 +14,11 @@
 * 테스트를 진행을 하면서 docs 의 스팩과 동일한지 체크 후 v2 도 동일하게 체크 후 
 * v1 을 v2 로 마이그레이션 진행
 
-
+```
 * 성공시 http status 200 call
 * 만약 http status 401 call 이면 token 에러 
 * 만약 http status 5xx call 이면 서버 에러 
-
+```
 
 * v1 curl 
 

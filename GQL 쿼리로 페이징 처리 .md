@@ -1,9 +1,9 @@
 
-
+# GQL 쿼리 페이징 처리 
 
 * GCP 에서 GQL을 가지고 DataStore 에서 페이징 처리 및 Spring Java 에서 DataStore 페이징 처리 
 
-### 구현 
+## GQL 문
 
 * GQL 로 페이징 처리 하는 방법 
 
@@ -15,6 +15,7 @@ limit 10
 order by __key__ asc
 ```
 
+## Spring Java
 
 * application level 에서 구현 방법
 

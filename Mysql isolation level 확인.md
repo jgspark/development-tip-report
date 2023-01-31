@@ -1,5 +1,12 @@
+# Mysql isolation level 확인
 
+## 개요 
+
+* Mysql 에서 격리 수준이 기본값이 어떤 것으로 설정이 되어 있는지 확인 
 * Mysql 서버의 격리 수준 레벨 확인 하는 방법
+
+
+## 사용법
 
 ```sql
 SHOW VARIABLES LIKE '%isolation';

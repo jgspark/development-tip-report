@@ -1,4 +1,4 @@
-# Spring Jpa java configuration 작성시 IllegalArgumentException 가 발생
+# Spring Jpa java configuration 작성 시 LocalContainerEntityManagerFactoryBean 에서 Exception 발생
 
 ## 개요 
 

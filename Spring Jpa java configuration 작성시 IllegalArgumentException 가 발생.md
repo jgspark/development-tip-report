@@ -4,7 +4,7 @@
 
 * Spring Batch 프로젝트를 진행을 하던 도주 기존에 클론 코딩으로 진행하는 과정에서는 발생이 되지 않았던 에럭 발생이 됨 
 
-* 해당 에러의 경우 `LocalContainerEntityManagerFactoryBean` 에서 `IllegalArgumentException` 가 발생이 되느 현상이로 확인을 하였다. 
+* 해당 에러의 경우 `LocalContainerEntityManagerFactoryBean` 에서 `IllegalArgumentException` 가 발생이 되는 현상으로 확인을 하였다. 
 
 * JPA 에서 `EntityManagerFactoryBean` 해당 Bean을 등록을 하다가 발생이 된다.
 
@@ -21,7 +21,7 @@ No PersistenceProvider specified in EntityManagerFactory configuration, and chos
 ### 에러의 추적 
 
 
-* 디버그를 통햇 볼 때 , `LocalContainerEntityManagerFactoryBean.class` 에서 `this.persistenceUnitInfo.getPersistenceProviderClassName()` 의 함수를 호출 후 에러가 발생이 된다.
+* 디버그를 통햇 볼 때, `LocalContainerEntityManagerFactoryBean.class` 에서 `this.persistenceUnitInfo.getPersistenceProviderClassName()` 의 함수를 호출 후 에러가 발생이 된다.
 
 <img width="1123" alt="스크린샷 2023-02-01 오후 10 26 31" src="https://user-images.githubusercontent.com/53357210/216055821-362d527f-c49d-4154-af0f-64b2c017903b.png">
 

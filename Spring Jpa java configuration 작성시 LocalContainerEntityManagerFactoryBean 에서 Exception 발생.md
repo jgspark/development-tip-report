@@ -18,7 +18,7 @@ No PersistenceProvider specified in EntityManagerFactory configuration, and chos
 <img width="1401" alt="스크린샷 2023-02-01 오후 10 24 17" src="https://user-images.githubusercontent.com/53357210/216055250-565a1dbd-8529-469d-a104-92c4187a1611.png">
 
 
-### 에러의 추적 
+### 에러
 
 
 * 디버그를 통햇 볼 때, `LocalContainerEntityManagerFactoryBean.class` 에서 `this.persistenceUnitInfo.getPersistenceProviderClassName()` 의 함수를 호출 후 에러가 발생이 된다.

@@ -10,10 +10,23 @@
 
 * select 의 경우 lock 이 걸리지는 않지만,  insert into 와 같이 상용을 하면 `X 락` 에 걸리게 된다. 
 
+
+### Case1 Query
+
 ```sql
 INSERT INTO table2
 SELECT * FROM table1
 WHERE condition;
+```
+
+### Case2 Query 
+
+```sql
+insert into table1 
+values (val, val2)
+ON DUPLICATE KEY UPDATE 
+val = 'test1'
+, val2 = 'test2' 
 ```
 
 * 간략하게 설명을 하면 T1 에서 이미 해당 table1 의 값을 가지고 insert 문을 실행을 하게 되면 Row 레벨에서 락이 걸리게 된다. 

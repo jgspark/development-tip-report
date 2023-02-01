@@ -21,7 +21,7 @@
 <img width="1806" alt="스크린샷 2023-01-27 오후 11 06 25" src="https://user-images.githubusercontent.com/53357210/215106381-550a7ca2-166f-4505-8bf8-8256781fc330.png">
 
 
-### 원인 분석 
+## 에러
 
 * `ConnectionFactoryUtils` 클래스에서 `getConnection` 을 호출을 해주고 있는데 이떄 `doGetConnection` 을 호출을 해준다. 
 
@@ -32,7 +32,7 @@
 <img width="776" alt="스크린샷 2023-01-28 오전 11 43 55" src="https://user-images.githubusercontent.com/53357210/215238092-41825bad-5e82-4a30-8664-bccf0b4f322d.png">
 
 
-## 처리 과정 
+## 해결 방법
 
 * 처리 과정의 경우 다음 과 같다. 
 

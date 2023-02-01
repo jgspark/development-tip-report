@@ -19,6 +19,10 @@ SELECT * FROM table1
 WHERE condition;
 ```
 
+* 간략하게 설명을 하면 T1 에서 이미 해당 table1 의 값을 가지고 insert 문을 실행을 하게 되면 Row 레벨에서 락이 걸리게 된다. 
+* 그렇지만 T2 에서 또한 동일한 구절로 select insert 를 하게 되면 이미 T1 에서 락이 잡혀 있어서 T2 에서 락이 걸리게 된는데 이때 pk 값이나 유니크 한 값이 아닐 경우 Gap Lock 이 발생하게 된다. 
+
+
 ### Case2 Query 
 
 ```sql
@@ -28,9 +32,6 @@ ON DUPLICATE KEY UPDATE
 val = 'test1'
 , val2 = 'test2' 
 ```
-
-* 간략하게 설명을 하면 T1 에서 이미 해당 table1 의 값을 가지고 insert 문을 실행을 하게 되면 Row 레벨에서 락이 걸리게 된다. 
-* 그렇지만 T2 에서 또한 동일한 구절로 select insert 를 하게 되면 이미 T1 에서 락이 잡혀 있어서 T2 에서 락이 걸리게 된는데 이때 pk 값이나 유니크 한 값이 아닐 경우 Gap Lock 이 발생하게 된다. 
 
 
 ## 해결 방법 

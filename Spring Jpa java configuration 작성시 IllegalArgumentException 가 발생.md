@@ -4,7 +4,7 @@
 
 * Spring Batch 프로젝트를 진행을 하던 도주 기존에 클론 코딩으로 진행하는 과정에서는 발생이 되지 않았던 에럭 발생이 됨 
 
-* 해다 에러의 경우 `LocalContainerEntityManagerFactoryBean` 에서 `IllegalArgumentException` 가 발생이 되느 현상이로 확인을 하였다. 
+* 해당 에러의 경우 `LocalContainerEntityManagerFactoryBean` 에서 `IllegalArgumentException` 가 발생이 되느 현상이로 확인을 하였다. 
 
 * JPA 에서 `EntityManagerFactoryBean` 해당 Bean을 등록을 하다가 발생이 된다.
 
